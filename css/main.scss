@@ -1,0 +1,121 @@
+@use './partials/global' as *;
+@use './partials/navigation' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/footer' as *;
+
+
+.hero-banner {
+    background-color: $primary-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0px;
+    width: 100%;
+    flex-direction: column-reverse;
+
+    @include medium-device {
+        flex-direction: row;
+    }
+
+    &__leftside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70%;
+        margin: 0 5vw;
+
+        @include medium-device {
+            width: 40%;
+        }
+
+        p {
+            margin: 2em 0px;
+        }
+
+        &__CTA {
+            display: inline-block;
+            width: 180px;
+            color: white;
+            background-color: $highlight-color;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: rgba(0, 0, 0, 0.255) 0 0 0 .125em;
+            border-radius: 100px;
+        }
+
+    }
+
+    &__image {
+        margin: 0 5vw;
+
+        img {
+            width: 40vw;
+        }
+    }
+
+}
+
+main h2 {
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    margin-left: 5vw;
+}
+
+.recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 5rem;
+    padding: 3vh 5vw;
+    flex-wrap: wrap;
+
+    &__card {
+
+        margin: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        position: relative;
+
+        // This before pseudo element applies a overlay effect, only visible when hovered on
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba($highlight-color, 0.2); 
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: inherit; // To match the card's rounded corners
+            pointer-events: none; 
+            z-index: 1; 
+        }
+    
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+
+        &__image {
+            height: 40vh;
+            display: block;
+        }
+
+        &__title {
+            position: absolute;
+            bottom: 3.5%;
+            right: 4%;
+            color: $card-text-color;
+            font-weight: bold;
+            z-index: 2;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $primary-background-color;
+    gap: 2rem;
+
+    /* for devices bigger than medium */
+    @include medium-device {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section {
+        text-align: center;
+
+        @include medium-device {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        padding: 2vh 0;
+    }
+
+
+    &__hours {
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+        max-width: 550px;
+        gap: 2rem;
+
+        @include medium-device {
+            justify-content: space-between;
+        }
+
+        p {
+            margin: 0.5rem 0px;
+        }
+
+        &__schedule {
+            display: flex;
+            flex-direction: column;
+
+            &__days {
+                color: #DB7A4E;
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: #DB7A4E;
+        font-size: 0.75rem;
+        margin: 1rem 0px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        img {
+            height: 30px;
+        }
+    }    
+    
+    a {
+        text-decoration: none;
+    }
+
+}

@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.main-nav {
+    position: sticky;
+    background-color: #FFFFFF;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; //default is 100% of parent, but we want to be explicit
+    z-index: 1000;
+    padding: 1rem 0px;
+
+    &__title {
+        padding-left: 5vw;
+        text-decoration: none;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    &__list {
+        padding-right: 5vw;
+
+        li {
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            display: inline;
+
+            a {
+                text-decoration: none;
+                padding: 0.5rem 0px;
+                color: $primary-text-color;
+
+                &:visited {
+                    color: inherit;
+                }
+
+                &:hover {
+                    color: $highlight-color;
+                    border-bottom: $highlight-color 4px solid;
+                }
+            }
+        }
+
+        &--emphasis {
+            border-bottom: $highlight-color 4px solid;
+            line-height: 0%;
+        }
+    }
+}

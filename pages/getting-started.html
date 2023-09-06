@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/getting-started.css" />
+    <title>Get Started</title>
+</head>
+
+<body>
+    <!-- ---Header and Navigation--- -->
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html" class="main-nav__title">
+                <h2>Travel Site</h2>
+            </a>
+
+            <ul class="main-nav__list">
+                <li><a href="../index.html" class="main-nav__list--emphasis">Home</a></li>
+                <li><a href="hawaii.html">Hawaii</a></li>
+                <li><a href="iceland.html">Iceland</a></li>
+                <li><a href="greece.html">Greece</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ---Main Content & Form--- -->
+    <main>
+        <section class="get-started-form">
+
+            <h1>Get Started with Your Adventure</h1>
+
+            <form>
+                <label for="destination">Select a Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="hawaii">Hawaii</option>
+                    <option value="iceland">Iceland</option>
+                    <option value="greece">Greece</option>
+                </select>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" value="sumbit">Begin Your Journey</button>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- -----Footer------ -->
+    <footer class="footer">
+
+        <section>
+            <h2 class="footer__title">Contact</h2>
+            <p class="footer__subtitle">EMAIL</p>
+            <p>info@travelsite.com</p>
+        </section>
+
+        <section>
+            <h2 class="footer__title">Hours</h2>
+            <div class="footer__hours">
+                <div class="footer__hours__schedule">
+                    <p class="footer__hours__schedule__days">MONDAY - FRIDAY</p>
+                    <p>9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="footer__hours__schedule">
+                    <p class="footer__hours__schedule__days">SATURDAY</p>
+                    <p>10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="footer__hours__schedule">
+                    <p class="footer__hours__schedule__days">SUNDAY</p>
+                    <p>Closed</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="footer__title">Social</h2>
+
+            <div class="footer__icons">
+                <a href="https://www.facebook.com">
+                    <img src="../assets/icons/icon-instagram.png" alt="facebook" />
+                </a>
+                <a href="https://www.yelp.com">
+                    <img src="../assets/icons/icon-facebook.png" alt="yelp" />
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="../assets/icons/icon-twitter.png" alt="instagram" />
+                </a>
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@use './partials/global' as *;
+@use './partials/navigation' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/footer' as *;
+
+
+.get-started-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 4em 14em 4em;
+    background-color: $primary-background-color;
+
+    h1 {
+        margin-bottom: 1em;
+        color: $primary-text-color;
+    }
+
+    label {
+        margin-top: 1em;
+        color: $primary-text-color;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        border: 1px solid $primary-text-color;
+    }
+
+    button {
+        margin-top: 1em;
+        background-color: $highlight-color;
+        padding: 1em;
+        color: white;
+        border: none;
+    }
+}
