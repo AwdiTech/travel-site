@@ -2,7 +2,9 @@
 @use 'mixins' as *;
 
 
-// Navigation Sticky fix. Sticky only applies to the parent element, so we need to make sure that the parent element is the one that is sticky.
+// Navigation Sticky fix. Sticky only applies to the parent element, 
+//  so we need to make sure that the container element is the one that is 
+//  sticky.
 .header {
     position: sticky;
     top: 0;
@@ -18,8 +20,8 @@
     display: block;
     text-align: center;
 
-    @include small-device{
-            display: flex;
+    @include small-device {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0px;
