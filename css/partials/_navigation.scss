@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 
-// Navigation Sticky fix. Sticky only applies
+// Navigation Sticky fix. Sticky only applies to the parent element, so we need to make sure that the parent element is the one that is sticky.
 .header {
     position: sticky;
     top: 0;
@@ -9,9 +9,7 @@
 }
 
 .main-nav {
-    position: sticky;
     background-color: #FFFFFF;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
