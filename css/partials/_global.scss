@@ -4,10 +4,10 @@
 @font-face {
     font-family: 'Verdana Pro';
     src: local('Verdana Pro'), local('VerdanaPro-Regular'),
-        url('../../assets/fonts/VerdanaPro-Regular.woff2') format('woff2'),
-        url('../../assets/fonts/VerdanaPro-Regular.woff') format('woff'),
-        url('../../assets/fonts/VerdanaPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/VerdanaPro-Regular.ttf') format('truetype');
+        url('./../assets/fonts/VerdanaPro-Regular.woff2') format('woff2'),
+        url('./../assets/fonts/VerdanaPro-Regular.woff') format('woff'),
+        url('./../assets/fonts/VerdanaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/VerdanaPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,10 +17,10 @@
     font-family: "Verdana Pro";
     font-weight: 700;
     src: local('Verdana Pro Bold'), local('VerdanaPro-Bold'),
-        url('../../assets/fonts/VerdanaPro-Bold.woff2') format('woff2'),
-        url('../../assets/fonts/VerdanaPro-Bold.woff') format('woff'),
-        url('../../assets/fonts/VerdanaPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/VerdanaPro-Bold.ttf') format('truetype');
+        url('./../assets/fonts/VerdanaPro-Bold.woff2') format('woff2'),
+        url('./../assets/fonts/VerdanaPro-Bold.woff') format('woff'),
+        url('./../assets/fonts/VerdanaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/VerdanaPro-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 
