@@ -54,27 +54,48 @@ h2 {
 
 .main-nav {
   background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
+  min-width: 375px;
   z-index: 1000;
-  padding: 1rem 0px;
+  padding-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+  }
 }
 .main-nav__title {
   padding-left: 5vw;
   text-decoration: none;
 }
+.main-nav__title h2 {
+  padding-bottom: 0.5rem;
+}
 .main-nav__title:visited {
   color: inherit;
 }
 .main-nav__list {
-  padding-right: 5vw;
+  padding-right: 2vw;
+}
+@media screen and (min-width: 640px) {
+  .main-nav__list {
+    padding-right: 5vw;
+  }
 }
 .main-nav__list li {
   margin: 0 1rem;
-  font-size: 1.2rem;
   display: inline;
+  font-size: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .main-nav__list li {
+    font-size: 1.2rem;
+  }
 }
 .main-nav__list li a {
   text-decoration: none;

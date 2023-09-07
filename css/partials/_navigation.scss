@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 
 // Navigation Sticky fix. Sticky only applies to the parent element, so we need to make sure that the parent element is the one that is sticky.
@@ -10,16 +11,29 @@
 
 .main-nav {
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; //default is 100% of parent, but we want to be explicit
+    width: 100%;
+    min-width: 375px;
     z-index: 1000;
-    padding: 1rem 0px;
+    padding-bottom: 1rem;
+    display: block;
+    text-align: center;
+
+    @include small-device{
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0px;
+    }
 
     &__title {
         padding-left: 5vw;
         text-decoration: none;
+
+
+        h2 {
+            padding-bottom: 0.5rem;
+        }
+
 
         &:visited {
             color: inherit;
@@ -27,12 +41,20 @@
     }
 
     &__list {
-        padding-right: 5vw;
+        padding-right: 2vw;
+
+        @include small-device {
+            padding-right: 5vw;
+        }
 
         li {
             margin: 0 1rem;
-            font-size: 1.2rem;
             display: inline;
+            font-size: 1rem;
+
+            @include small-device {
+                font-size: 1.2rem;
+            }
 
             a {
                 text-decoration: none;
