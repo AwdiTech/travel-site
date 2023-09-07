@@ -46,6 +46,12 @@ h2 {
   font-weight: bold;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .main-nav {
   position: sticky;
   background-color: #FFFFFF;
@@ -206,8 +212,8 @@ h2 {
   width: 40vw;
 }
 
-main h2 {
-  padding-top: 3vh;
+.recommendations__header {
+  padding-top: 4.5vh;
   padding-bottom: 1vh;
   margin-left: 5vw;
 }
@@ -218,7 +224,7 @@ main h2 {
   align-items: center;
   position: relative;
   padding-bottom: 5rem;
-  padding: 3vh 5vw;
+  padding: 0vh 5vw 3vh 5vw;
   flex-wrap: wrap;
 }
 .recommendations__card {

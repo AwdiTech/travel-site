@@ -1,5 +1,13 @@
 @use 'variables' as *;
 
+
+// Navigation Sticky fix. Sticky only applies
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .main-nav {
     position: sticky;
     background-color: #FFFFFF;
