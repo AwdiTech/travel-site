@@ -66,6 +66,7 @@
 }
 .footer a {
   text-decoration: none;
+  color: #335576;
 }
 
 * {
@@ -140,7 +141,6 @@ h2 {
 .main-nav__title:hover {
   color: #DB7A4E;
   border-bottom: #DB7A4E 4px solid;
-  z-index: 1005;
 }
 .main-nav__list {
   padding-right: 2vw;
