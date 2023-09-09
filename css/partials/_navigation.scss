@@ -31,7 +31,11 @@
         
         h3 {
             padding-bottom: 0.5rem;
+            margin-top: 0;
+
+            @include small-device {
             margin-top: 0.5rem;
+            }
         }
 
 
