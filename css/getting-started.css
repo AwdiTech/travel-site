@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Verdana Pro";
-  src: local("Verdana Pro"), local("VerdanaPro-Regular"), url("./../assets/fonts/VerdanaPro-Regular.woff2") format("woff2"), url("./../assets/fonts/VerdanaPro-Regular.woff") format("woff"), url("./../assets/fonts/VerdanaPro-Regular.eot?#iefix") format("embedded-opentype"), url("./../assets/fonts/VerdanaPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Verdana Pro";
-  font-weight: 700;
-  src: local("Verdana Pro Bold"), local("VerdanaPro-Bold"), url("./../assets/fonts/VerdanaPro-Bold.woff2") format("woff2"), url("./../assets/fonts/VerdanaPro-Bold.woff") format("woff"), url("./../assets/fonts/VerdanaPro-Bold.eot?#iefix") format("embedded-opentype"), url("./../assets/fonts/VerdanaPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +6,8 @@
 
 /* Global styles */
 body {
-  font-family: "Verdana Pro", Arial, sans-serif;
-  font-weight: 400;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: normal;
   color: #335576;
 }
 
@@ -33,8 +21,7 @@ h3 {
   font-weight: bold;
 }
 
-p,
-p i {
+p {
   font-size: 18px;
   font-weight: 400;
   color: #335576;
@@ -58,7 +45,6 @@ h2 {
   min-width: 375px;
   z-index: 1000;
   padding-bottom: 1rem;
-  display: block;
   text-align: center;
 }
 @media screen and (min-width: 640px) {
@@ -66,18 +52,25 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0px;
+    padding: 0.5rem 0px;
   }
 }
 .main-nav__title {
-  padding-left: 5vw;
+  margin-left: 5vw;
   text-decoration: none;
+  border-bottom: rgba(219, 122, 78, 0) 4px solid;
 }
-.main-nav__title h2 {
+.main-nav__title h3 {
   padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .main-nav__title:visited {
   color: inherit;
+}
+.main-nav__title:hover {
+  color: #DB7A4E;
+  border-bottom: #DB7A4E 4px solid;
+  z-index: 1005;
 }
 .main-nav__list {
   padding-right: 2vw;
@@ -111,7 +104,6 @@ h2 {
 }
 .main-nav__list--emphasis {
   border-bottom: #DB7A4E 4px solid;
-  line-height: 0%;
 }
 
 .footer {
@@ -123,12 +115,13 @@ h2 {
   padding-bottom: 40px;
   background-color: #FEFAF5;
   gap: 2rem;
-  /* for devices bigger than medium */
+  min-width: 375px;
 }
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 .footer section {
@@ -189,6 +182,7 @@ h2 {
   align-items: center;
   padding: 4em 4em 14em 4em;
   background-color: #FEFAF5;
+  min-width: 375px;
 }
 .get-started-form h1 {
   margin-bottom: 1em;
@@ -204,10 +198,18 @@ h2 {
   margin-top: 0.5em;
   border: 1px solid #335576;
 }
-.get-started-form button {
+.get-started-form__button {
   margin-top: 1em;
   background-color: #DB7A4E;
-  padding: 1em;
+  padding: 1rem 2rem;
   color: white;
   border: none;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.255) 0 0 0 0.125em;
+  border-radius: 70px;
+  transition: all 0.3s ease;
+}
+.get-started-form__button:hover {
+  background-color: #cc5c2a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=getting-started.css.map */

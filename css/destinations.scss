@@ -8,6 +8,7 @@
 .main{
     position: relative;
     width: 100%;
+    min-width: 375px;
 
     @include desktop {
         height: 90vh;

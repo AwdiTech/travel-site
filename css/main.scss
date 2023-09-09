@@ -12,6 +12,7 @@
     align-items: center;
     padding: 4em 0px;
     width: 100%;
+    min-width: 375px;
     flex-direction: column-reverse;
 
     @include medium-device {
@@ -23,7 +24,7 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 70%;
-        margin: 0 5vw;
+        margin: 0 3vw 0 6vw;
 
         @include medium-device {
             width: 40%;
@@ -43,7 +44,14 @@
             text-align: center;
             text-decoration: none;
             box-shadow: rgba(0, 0, 0, 0.255) 0 0 0 .125em;
-            border-radius: 100px;
+            border-radius: 70px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: darken($highlight-color, 10%);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
         }
 
     }
@@ -73,6 +81,7 @@
     padding-bottom: 5rem;
     padding: 0vh 5vw 3vh 5vw;
     flex-wrap: wrap;
+    min-width: 375px;
 
     &__card {
 

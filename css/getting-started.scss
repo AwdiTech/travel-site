@@ -11,6 +11,7 @@
     align-items: center;
     padding: 4em 4em 14em 4em;
     background-color: $primary-background-color;
+    min-width: 375px;
 
     h1 {
         margin-bottom: 1em;
@@ -29,11 +30,21 @@
         border: 1px solid $primary-text-color;
     }
 
-    button {
+    &__button {
         margin-top: 1em;
         background-color: $highlight-color;
-        padding: 1em;
+        padding: 1rem 2rem;
         color: white;
         border: none;
+        font-size: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.255) 0 0 0 .125em;
+        border-radius: 70px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: darken($highlight-color, 10%);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  
+        }
+
     }
 }

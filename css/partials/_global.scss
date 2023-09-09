@@ -1,31 +1,5 @@
 @use 'variables' as *;
 
-
-@font-face {
-    font-family: 'Verdana Pro';
-    src: local('Verdana Pro'), local('VerdanaPro-Regular'),
-        url('./../assets/fonts/VerdanaPro-Regular.woff2') format('woff2'),
-        url('./../assets/fonts/VerdanaPro-Regular.woff') format('woff'),
-        url('./../assets/fonts/VerdanaPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./../assets/fonts/VerdanaPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face{
-    font-family: "Verdana Pro";
-    font-weight: 700;
-    src: local('Verdana Pro Bold'), local('VerdanaPro-Bold'),
-        url('./../assets/fonts/VerdanaPro-Bold.woff2') format('woff2'),
-        url('./../assets/fonts/VerdanaPro-Bold.woff') format('woff'),
-        url('./../assets/fonts/VerdanaPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./../assets/fonts/VerdanaPro-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
-
-
 // Reset
 * {
     margin: 0;
@@ -35,8 +9,8 @@
 
 /* Global styles */
 body {
-    font-family: "Verdana Pro", Arial, sans-serif;
-    font-weight: 400;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: normal;
     color: $primary-text-color;
 }
 
@@ -51,8 +25,7 @@ h3 {
 
 }
 
-p,
-p i {
+p{
     font-size: 18px;
     font-weight: 400;
     color: $primary-text-color;

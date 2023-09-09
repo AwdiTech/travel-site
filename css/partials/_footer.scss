@@ -10,12 +10,14 @@
     padding-bottom: 40px;
     background-color: $primary-background-color;
     gap: 2rem;
+    min-width: 375px;
 
-    /* for devices bigger than medium */
     @include medium-device {
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-start;
     }
+    
 
     section {
         text-align: center;
