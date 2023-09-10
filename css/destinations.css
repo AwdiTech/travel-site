@@ -16,11 +16,11 @@
     align-items: flex-start;
   }
 }
-.footer section {
+.footer .footer-section {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .footer section {
+  .footer .footer-section {
     text-align: left;
   }
 }
